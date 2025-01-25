@@ -97,36 +97,86 @@
 <section class="contact_section layout_padding">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-4 col-md-5 offset-md-1">
-        <div class="heading_container">
+      <div class="col-lg-6 col-md-6 offset-md-1">
+        <div class="heading_container mb-4">
           <h2>
             Contact <span>Us</span>
           </h2>
+          <p class="mt-3" style="color: #666;">
+            Get in touch with us for any inquiries about our chemical solutions and services.
+          </p>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-5 offset-md-1">
-        <div class="form_container">
-          <form action="">
-            <div>
-              <input type="text" placeholder="Your Name" />
+        
+        <!-- Contact Information -->
+        <div class="contact_info mb-4" style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+          <div class="info_item mb-3">
+            <i class="fas fa-map-marker-alt" style="color: #333; font-size: 20px; margin-right: 10px;"></i>
+            <span>
+              4800 State Road 60 East<br>
+              Mulberry, FL 33860
+            </span>
+          </div>
+          <div class="info_item mb-3">
+            <i class="fas fa-phone-alt" style="color: #333; font-size: 20px; margin-right: 10px;"></i>
+            <span>863-218-8305</span>
+          </div>
+          <div class="info_item mb-3">
+            <i class="fas fa-envelope" style="color: #333; font-size: 20px; margin-right: 10px;"></i>
+            <span>Contact@arrmazprdinc.com</span>
+          </div>
+          <div class="info_item">
+            <i class="fas fa-clock" style="color: #333; font-size: 20px; margin-right: 10px;"></i>
+            <span>Monday - Friday: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form_container" style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Phone Number" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;" />
+              </div>
             </div>
-            <div>
-              <input type="text" placeholder="Phone Number" />
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;" />
             </div>
-            <div>
-              <input type="email" placeholder="Email" />
+            <div class="mb-3">
+              <select class="form-control" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                <option value="">Select Inquiry Type</option>
+                <option value="product">Product Information</option>
+                <option value="technical">Technical Support</option>
+                <option value="sales">Sales Inquiry</option>
+                <option value="other">Other</option>
+              </select>
             </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Message" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
             </div>
             <div class="btn_box">
-              <button>
-                SEND
+              <button type="submit" style="background-color: #333; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">
+                SEND MESSAGE
               </button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="col-lg-5 col-md-5">
+        <div class="map_container" style="height: 100%; min-height: 600px; border-radius: 8px; overflow: hidden; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+          <!-- Replace the src with your actual Google Maps embed URL -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.698273565899!2d-82.0547893!3d27.8941657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd3f1b89a4d15f%3A0x9c2f3e5c5c9b8d0e!2s4800%20State%20Road%2060%20E%2C%20Mulberry%2C%20FL%2033860!5e0!3m2!1sen!2sus!4v1643127843264!5m2!1sen!2sus"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
         </div>
       </div>
     </div>
